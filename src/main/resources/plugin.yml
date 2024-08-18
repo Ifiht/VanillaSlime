@@ -1,0 +1,8 @@
+name: VanillaSlime
+version: '1.0-SNAPSHOT'
+main: org.evlis.vanillaSlime.VanillaSlime
+api-version: '1.21'
+load: STARTUP
+authors: [ Ifiht ]
+description: Slimefun-compatible addons plugin without the extras
+website: evlis.org
