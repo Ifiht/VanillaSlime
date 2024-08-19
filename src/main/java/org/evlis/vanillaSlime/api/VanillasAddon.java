@@ -1,5 +1,5 @@
 package org.evlis.vanillaSlime.api;
-
+//maps io.github.thebusybiscuit.slimefun4.api.SlimefunAddon
 import java.util.logging.Logger;
 
 import javax.annotation.Nonnull;

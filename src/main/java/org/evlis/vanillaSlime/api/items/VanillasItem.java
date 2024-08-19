@@ -1,5 +1,5 @@
 package org.evlis.vanillaSlime.api.items;
-
+// maps io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
