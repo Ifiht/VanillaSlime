@@ -1,5 +1,6 @@
 package org.evlis.vanillaSlime.api.items;
 // maps io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem
+
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
@@ -26,7 +27,7 @@ import io.github.bakedlibs.dough.collections.OptionalMap;
 import io.github.bakedlibs.dough.items.ItemUtils;
 import org.evlis.vanillaSlime.api.MinecraftVersion;
 import org.evlis.vanillaSlime.api.VanillasAddon;
-import org.evlis.vanillaSlime.api.VanillasBranch;
+import org.evlis.vanillaSlime.api.SlimefunBranch;
 import org.evlis.vanillaSlime.api.exceptions.IdConflictException;
 import org.evlis.vanillaSlime.api.exceptions.IncompatibleItemHandlerException;
 import org.evlis.vanillaSlime.api.exceptions.MissingDependencyException;
@@ -34,18 +35,14 @@ import org.evlis.vanillaSlime.api.exceptions.UnregisteredItemException;
 import org.evlis.vanillaSlime.api.exceptions.WrongItemStackException;
 import org.evlis.vanillaSlime.api.player.PlayerProfile;
 import org.evlis.vanillaSlime.api.recipes.RecipeType;
-import org.evlis.vanillaSlime.api.researches.Research;
 import org.evlis.vanillaSlime.core.SlimefunRegistry;
 import org.evlis.vanillaSlime.core.attributes.NotConfigurable;
 import org.evlis.vanillaSlime.core.attributes.Placeable;
-import org.evlis.vanillaSlime.core.attributes.Radioactive;
-import org.evlis.vanillaSlime.core.guide.SlimefunGuide;
 import org.evlis.vanillaSlime.core.handlers.GlobalItemHandler;
-import org.evlis.vanillaSlime.implementation.Slimefun;
-import org.evlis.vanillaSlime.implementation.items.VanillaItem;
-import org.evlis.vanillaSlime.implementation.items.electric.machines.enchanting.AutoDisenchanter;
-import org.evlis.vanillaSlime.implementation.items.electric.machines.enchanting.AutoEnchanter;
+import org.evlis.vanillaSlime.implementation.VanillaSlime;
+import org.evlis.vanillaSlime.implementation.items.BaseItem;
 
+//import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
 
 /**
  * A {@link VanillasItem} is a custom item registered by a {@link VanillasAddon}.
@@ -53,14 +50,14 @@ import org.evlis.vanillaSlime.implementation.items.electric.machines.enchanting.
  * to give the item functionality.
  * In contrast to that the {@link SlimefunItemStack} defines the look and feel of the item.
  *
- * Remember to call {@link #register(SlimefunAddon)} on your {@link SlimefunItem} for it
+ * Remember to call {@link #register(VanillasAddon)} on your {@link VanillasItem} for it
  * to appear in the {@link SlimefunGuide}.
  *
  * @author TheBusyBiscuit
  * @author Poslovitch
  *
  * @see SlimefunItemStack
- * @see SlimefunAddon
+ * @see VanillasAddon
  *
  */
 public class VanillasItem {
