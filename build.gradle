@@ -48,8 +48,10 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT")
-    implementation("org.apache.commons:commons-lang3:3.0")
+    compileOnly "io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT"
+    implementation group: 'commons-lang', name: 'commons-lang', version: '2.6'
+    implementation group: 'io.papermc', name: 'paperlib', version: '1.0.8'
+    implementation group: 'com.github.baked-libs.dough', name: 'dough-api', version: 'baf2d79f62'
 }
 
 def targetJavaVersion = 21

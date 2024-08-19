@@ -14,7 +14,7 @@ import org.evlis.vanillaSlime.api.items.VanillasItem;
 
 /**
  * This is a very basic interface that will be used to identify
- * the {@link Plugin} that registered a {@link SlimefunItem}.
+ * the {@link Plugin} that registered a {@link VanillasItem}.
  *
  * It will also contain some utility methods such as {@link VanillasAddon#getBugTrackerURL()}
  * to provide some context when bugs arise.
